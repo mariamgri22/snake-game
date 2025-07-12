@@ -97,6 +97,7 @@ button:hover {
 
 canvas {
     display: block;
+    width: 100%;
 }
 
 .instructions {
