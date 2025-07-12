@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #1a2a6c);
+    padding: 20px;
+}
+
+.game-container {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #4CAF50;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(30, 30, 30, 0.9);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.score-container {
+    font-size: 22px;
+    font-weight: bold;
+    color: #21CBF3;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: #3d8b40;
+}
+
+#pause-btn {
+    background: #FFC107;
+}
+
+#pause-btn:hover {
+    background: #e0a800;
+}
+
+#reset-btn {
+    background: #F44336;
+}
+
+#reset-btn:hover {
+    background: #d32f2f;
+}
+
+.game-board {
+    position: relative;
+    background-color: #0a1929;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 2px solid #2E7D32;
+}
+
+canvas {
+    display: block;
+}
+
+.instructions {
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.key {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #555;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.game-over h2 {
+    font-size: 36px;
+    color: #F44336;
+    margin-bottom: 15px;
+}
+
+.game-over p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
